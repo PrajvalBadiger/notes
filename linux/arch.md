@@ -20,3 +20,9 @@ urlcolor: blue
     /^WM_CLASS/{sub(/.* =/, "instance:"); sub(/,/, "\nclass:"); print}
     /^WM_NAME/{sub(/.* =/, "title:"); print}'
 ```
+
+## 1.2 Enable dark mode in chrome
+
+- goto [chrome://flags/#enable-force-dark](chrome://flags/#enable-force-dark)
+- Select: Enable with simple RBG-based inversion
+- Relaunch the browser
