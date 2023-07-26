@@ -177,6 +177,22 @@ you can combine the `git submodule init`{.bash} and `git submodule update`{.bash
 To also initialize, fetch and checkout any nested submodules, you can use the foolproof `git submodule update --init --recursive`{.bash}.
 
 \newpage{}
+
+# 3. Git usefull commands
+
+## 3.1 git clone with branch
+
+```bash
+git clone -b <branch-name> --single-branch <upstream>
+```
+
+## 3.2 create and checkout to new branch
+
+```bash
+git checkout -b <branch-name>
+```
+
+\newpage{}
 # References
 1. worktree  
     [https://git-scm.com/docs/git-worktree](https://git-scm.com/docs/git-worktree)  
