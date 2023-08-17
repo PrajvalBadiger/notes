@@ -20,8 +20,9 @@ multiple linked worktrees.
 
 ## add
 
-Add a new working tree. This new worktree is called a an linked worktree as 
+Add a new working tree. This new worktree is called an linked worktree as 
 opposed to the main worktree prepared by the git-init or git-clone.
+
 ``` bash
 git worktree add <path> [<commit-ish>]
 
@@ -192,7 +193,18 @@ git clone -b <branch-name> --single-branch <upstream>
 git checkout -b <branch-name>
 ```
 
+# 4. Miscellaneous
+
+## 4.1 Adding images to README.md
+
+- go to the github page of the repository and click on issues
+- click on new issue
+- click on "Attach files by dragging & dropping, selecting or pasting them."
+- select the image you want to upload
+- now copy and paste the generate output in README.md file
+
 \newpage{}
+
 # References
 1. worktree  
     [https://git-scm.com/docs/git-worktree](https://git-scm.com/docs/git-worktree)  
