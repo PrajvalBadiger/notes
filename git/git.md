@@ -184,13 +184,31 @@ To also initialize, fetch and checkout any nested submodules, you can use the fo
 ## 3.1 git clone with branch
 
 ```bash
-git clone -b <branch-name> --single-branch <upstream>
+    git clone -b <branch-name> --single-branch <upstream>
 ```
 
 ## 3.2 create and checkout to new branch
 
 ```bash
-git checkout -b <branch-name>
+    git checkout -b <branch-name>
+```
+
+## 3.3 git remote
+
+### 3.3.1 show remote url
+```bash
+    git remote -v
+
+    Ex:
+    $ git remote -v
+    origin  git@github.com:PrajvalBadiger/notes.git (fetch)
+    origin  git@github.com:PrajvalBadiger/notes.git (push)
+
+```
+### 3.3.2 change remote url from http to ssh
+```bash
+    git remote set-url origin <remote-url>
+
 ```
 
 # 4. Miscellaneous
