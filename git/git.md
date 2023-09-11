@@ -109,6 +109,16 @@ Advantage in using a bare repo: all the checkout can be inside the repo itself.
 1. Telescope list worktrees: ``` <leader>wt ```
 2. Telescope create worktree: ``` <leader>cwt ```
 
+## 1.2.2 git fetch with bare repositories
+
+When we do a `git clone` with `--bare` option: neither remote-tracking branches nor the related configuration variables are created.
+So `git fetch` doesn't download remote branches. To over come this we need to configure `remote.origin.fetch` property.
+
+Run the below command to configure `remote.origin.fetch`
+```bash
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*" 
+```
+
 \newpage{}
 
 # 2. Git Submodules
